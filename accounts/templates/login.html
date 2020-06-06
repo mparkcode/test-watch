@@ -7,17 +7,17 @@
 {% block page_heading %}User Login{% endblock %}
 
 {% block content %}
-<div class="row">
-<div class="col-md-3"></div>
-<div class="col-md-6">
+<div class="row login">
+<div class="col-md-2"></div>
+<div class="col-md-8">
     <form method="POST">
             {% csrf_token %}
             {{ login_form | as_bootstrap }}
-            <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+            <button type="submit" class="btn btn-custom btn-lg" onclick="logIn()" >Log in</button>
             </form>
             </div>
         </div>
-    
+    <hr class="password_reset">
 
 <div class="row">
 <div class="col-md-6">

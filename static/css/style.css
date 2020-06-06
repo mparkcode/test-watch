@@ -1,30 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
-    font-family: Arial;
-    padding-top: 100px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login,
+.reg{
+    margin-top: 50px;
+
+}
+
+.password_reset {
+    margin-top: 50px;
 }
 
 .background-image {
-  background-image: url("../images/bg-masthead.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 1rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
-.layer {
-    background-color: rgba(54, 54, 54, 0.397);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
 .jumbotron {
-    background-color: rgba(68, 52, 52, 0.445);
+    background-color: rgba(243, 239, 239, 0);
     margin-top: 200px;
-    color:rgb(255, 255, 255);
+    text-align: center;
 }
 
 .badge {
@@ -44,8 +53,8 @@ body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
 }
 
@@ -56,7 +65,7 @@ caption p {
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .panel-default {
@@ -67,8 +76,27 @@ caption p {
 .panel-body {
     height: 100%;
     border: 1px solid rgb(68, 52, 52, 0.445);
+    padding: 25px;
+    margin-top: 30px;
 }
 
+.product-name{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
 .product-description {
     min-height: 40px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    margin-right: 10px;
+}
+
+.btn-custom {
+    background-color: #64a19d;
+}
+
+.btn-custom:hover {
+    background-color: #307a75;
 }

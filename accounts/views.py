@@ -22,7 +22,7 @@ def logout(request):
 def login(request):
     """Return a login page"""
     if request.user.is_authenticated:
-        return redirect(reverse('index'))
+        return redirect(reverse('products'))
     if request.method == "POST":
         login_form = UserLoginForm(request.POST)
 
@@ -33,7 +33,7 @@ def login(request):
             if user:
                 auth.login(user=user, request=request)
                 messages.success(request, "You have successfully logged in")
-                return redirect(reverse('index'))
+                return redirect(reverse('products'))
             else:
                 login_form.add_error(None, "Your username or password is wrong")
     else:
