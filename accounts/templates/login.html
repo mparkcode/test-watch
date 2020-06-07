@@ -7,8 +7,8 @@
 {% block page_heading %}User Login{% endblock %}
 
 {% block content %}
-<div class="row login">
-<div class="col-md-2"></div>
+<div class="login">
+<div class="col-sm-2"></div>
 <div class="col-md-8">
     <form method="POST">
             {% csrf_token %}
@@ -19,9 +19,7 @@
         </div>
     <hr class="password_reset">
 
-<div class="row">
 <div class="col-md-6">
 <p>Forgot your password, <a href="{% url 'password_reset' %}">Click Here</a></p> 
-</div>
 </div>
 {% endblock %}

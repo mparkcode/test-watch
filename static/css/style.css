@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 .login,
@@ -21,21 +21,38 @@ body {
     height: auto;
     min-height: 35rem;
     padding: 1rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/bg-masthead.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/home-background.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 
+.content-aria {
+    margin-top: 50px;
+    padding: 25px 25px 25px 25px,
+}
 
+hr {
+    background-color: #c67605
+}
+
+.product-background {
+    width: 100%;
+    height: 0 auto;
+    min-height: 35rem;
+    padding: 1rem 0;
+    background-color:#ffffff; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: black;
+}
 
 .jumbotron {
     background-color: rgba(243, 239, 239, 0);
-    margin-top: 200px;
     text-align: center;
 }
-
 .badge {
     padding-left: 9px;
     padding-right: 9px;
@@ -65,7 +82,7 @@ caption p {
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .panel-default {
@@ -75,28 +92,39 @@ caption p {
 
 .panel-body {
     height: 100%;
-    border: 1px solid rgb(68, 52, 52, 0.445);
-    padding: 25px;
-    margin-top: 30px;
+    border: 1px solid #ddd;
 }
 
-.product-name{
-    margin-top: 20px;
-    margin-bottom: 25px;
+.product-name {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
+
 .product-description {
-    min-height: 40px;
-    margin-bottom: 30px;
+    min-height: 50px;
 }
 
 .form-control {
     margin-right: 10px;
+    margin-left: 10px;
+}
+
+.add-btn {
+    margin-left: 10px;
 }
 
 .btn-custom {
-    background-color: #64a19d;
+    background-color: rgb(185, 151, 39, 1);
+    text-align: center;
 }
 
 .btn-custom:hover {
-    background-color: #307a75;
+    background-color: rgb(134, 106, 11);
+}
+@media only screen and (min-width: 600px) {
+  .jumbotron {
+    background-color: rgba(243, 239, 239, 0);
+    margin-top: 200px;
+    text-align: center;
+  }
 }
