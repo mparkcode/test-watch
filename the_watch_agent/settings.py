@@ -140,7 +140,6 @@ MEDIA_URL = '/media/'
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
 
-
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.environ.get("EMAIL_ADDRESS")

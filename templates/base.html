@@ -13,6 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    {% block head_js%}
+    {% endblock head_js%}
     <title>The Watch Agent</title>
 </head>
 <body class="background-image">
@@ -30,6 +32,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'view_cart' %}">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i> cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a>
+                </li>
+                <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
+                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+                <button class="btn btn-custom my-2 my-sm-0" type="submit">Search</button>
+                </form>
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'index' %}">Home</a>
@@ -41,19 +55,8 @@
                     <a class="nav-link" href="{% url 'registration' %}">Sign up</a>
                 </li>
                 {% endif %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'view_cart' %}">
-                        <i class="fa fa-shopping-cart" style="font-size:24px"></i> cart
-                        {% if product_count > 0 %}
-                        <label class="badge badge-warning">{{ product_count }}</label>
-                        {% endif %}
-                    </a>
-                </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
-                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
-                <button class="btn btn-custom my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                
             </div>
             </nav>
     
@@ -65,7 +68,7 @@
 
 
   <!-- Site footer -->
-    <footer class="sticky-bottom container-fluid">
+    <footer class="fixed-bottom container-fluid footer">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <h5>About</h5>
@@ -82,14 +85,11 @@
           </div>
         </div>
         <hr>
-     
-      
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by the owner.
             </p>
           </div>
-
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li class="d-inline"><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>

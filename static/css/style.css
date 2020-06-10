@@ -22,6 +22,7 @@ body {
 
 .password_reset {
     margin-top: 50px;
+    width: 50%;
 }
 
 .background-image {
@@ -157,8 +158,20 @@ caption p {
     margin-left: 1rem;
 }
 
+
 /* FOOTER */
 
+.footer {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    position: relative;
+    background-color: #000000;
+    margin-top: 6rem;
+  }
+}
 
 .facebook,
 .twitter,
