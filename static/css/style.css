@@ -2,14 +2,23 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white; 
+}
+
+
+
+.caption {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .login,
 .reg{
     margin-top: 50px;
+ 
 
 }
+
 
 .password_reset {
     margin-top: 50px;
@@ -37,6 +46,19 @@ hr {
 }
 
 .product-background {
+    width: 100%;
+    height: 0 auto;
+    min-height: 35rem;
+    padding: 1rem 0;
+    background-color:#ffffff; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: black;
+}
+
+.cart-background {
     width: 100%;
     height: 0 auto;
     min-height: 35rem;
@@ -83,6 +105,12 @@ caption p {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.input-group-addon {
+    padding-right: 10px;
 }
 
 .panel-default {
@@ -92,7 +120,9 @@ caption p {
 
 .panel-body {
     height: 100%;
+    margin-left: 1rem;
     border: 1px solid #ddd;
+    border-style: none;
 }
 
 .product-name {
@@ -121,6 +151,42 @@ caption p {
 .btn-custom:hover {
     background-color: rgb(134, 106, 11);
 }
+
+.total-mod {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* FOOTER */
+
+
+.facebook,
+.twitter,
+.linkedin {
+    color: rgb(185, 151, 39, 1);
+}
+
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover {
+    color: rgb(134, 106, 11);
+}
+
+.footer-links {
+    color: rgb(185, 151, 39, 1);
+}
+
+.footer-links a {
+    color: rgb(185, 151, 39, 1);
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 600px) {
   .jumbotron {
     background-color: rgba(243, 239, 239, 0);

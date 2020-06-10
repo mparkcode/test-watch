@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Bootstrap CSS & Own CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     <!--Javascript-->
     <script src="{% static 'js/script.js' %}"></script>
@@ -28,9 +28,6 @@
                     <a class="nav-link" href="{% url 'products' %}">Watches <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'profile' %}">Profile</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
                 {% else %}
@@ -46,7 +43,7 @@
                 {% endif %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'view_cart' %}">
-                        <i class="fa fa-shipping-cart"></i> cart
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i> cart
                         {% if product_count > 0 %}
                         <label class="badge badge-warning">{{ product_count }}</label>
                         {% endif %}
@@ -67,8 +64,42 @@
         
 
 
-        <footer>
-            
-        </footer>
+  <!-- Site footer -->
+    <footer class="sticky-bottom container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <h5>About</h5>
+            <p class="text-justify">The Watch Agent is a webiste that provides you with luxury watches in a very smooth way without the long waiting times</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+     
+      
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by the owner.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li class="d-inline"><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="d-inline"><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="d-inline"><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+     
+</footer>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
