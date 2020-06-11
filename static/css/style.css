@@ -154,7 +154,7 @@ caption p {
 }
 
 .total-mod {
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-left: 1rem;
 }
 
@@ -162,7 +162,7 @@ caption p {
 /* FOOTER */
 
 .footer {
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 @media only screen and (max-width: 1024px) {
