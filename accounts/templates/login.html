@@ -4,22 +4,26 @@
 
 {% block page_title %}Login Page{% endblock %}
 
-{% block page_heading %}Login in{% endblock %}
+{% block page_heading %}{% endblock %}
 
 {% block content %}
-<div class="login">
-
-<div class="col-md-8">
-    <form method="POST">
-            {% csrf_token %}
-            {{ login_form | as_bootstrap }}
-            <button type="submit" class="btn btn-custom btn-lg" onclick="logIn()" >Log in</button>
-            </form>
+<div class="container">
+    <div class="login">
+        <div class="row">
+            <div class="col">
+                <form method="POST">
+                        {% csrf_token %}
+                        {{ login_form | as_bootstrap }}
+                        <button type="submit" class="btn btn-custom btn-lg" onclick="logIn()" >Log in</button>
+                        </form>
             </div>
-</div>
-    <hr class="password_reset">
+        </div>
+            
+            <hr class="password_reset">
 
-<div class="col-md-6">
-<p>Forgot your password, <a href="{% url 'password_reset' %}">Click Here</a></p> 
+        <div class="col-md-6 forget-password">
+            <p>Forgot your password, <a href="{% url 'password_reset' %}">Click Here</a></p> 
+        </div>
+    </div>
 </div>
 {% endblock %}

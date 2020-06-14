@@ -4,11 +4,11 @@
 
 {% block page_title %}Registration Page{% endblock %}
 
-{% block page_heading %}User Registration{% endblock %}
+{% block page_heading %}{% endblock %}
 
 {% block content %}
 <div class="container">
-<div class="row">
+<div class="row reg-log">
 <p>If you already have an account, you can <a href="{% url 'login' %}">sign in</a></p>
 </div>
 
@@ -19,4 +19,6 @@
      <button type="submit" class="btn btn-custom btn-lg">Sign up</button>
     </form>
 </div>
+
+<hr class="registration">
 {% endblock %}

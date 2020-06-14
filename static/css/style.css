@@ -15,14 +15,34 @@ body {
 .login,
 .reg{
     margin-top: 50px;
- 
-
 }
 
+.reg-log {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.reg-log a{
+    color: rgb(185, 151, 39, 1);
+}
 
 .password_reset {
     margin-top: 50px;
     width: 50%;
+}
+
+.registration {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.forget-password {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.forget-password a {
+    color: rgb(185, 151, 39, 1);
 }
 
 .background-image {
