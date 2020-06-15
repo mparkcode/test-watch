@@ -60,29 +60,28 @@
             </div>
             </nav>
     
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
             
                     <h1>{% block page_heading %}{% endblock %}</h1>
                   
                     {% block content %}{% endblock %}
         
-
-
+            
   <!-- Site footer -->
-    <footer class="container-fluid footer">
+    <footer class="container footer">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <h5>About</h5>
             <p class="text-justify">The Watch Agent is a webiste that provides you with luxury watches in a very smooth way without the long waiting times</p>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <h5>Quick Links</h5>
-            <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
         </div>
         <hr>
         <div class="row">

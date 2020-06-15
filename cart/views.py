@@ -31,7 +31,9 @@ def adjust_cart(request, id):
         cart[id] = quantity
     else:
         cart.pop(id)
-    
+        request.session['cart'] = cart
+        return redirect(reverse('products'))
+
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
 

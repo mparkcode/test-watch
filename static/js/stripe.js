@@ -20,7 +20,7 @@ $(function() {
             $("#id_cvv").removeAttr('name');
             $("#id_expiry_month").removeAttr('name');
             $("#id_expiry_year").removeAttr('name');
-
+            console.log(response);
             form.submit();
         } else {
             $("#stripe-error-message").text(response.error.message);

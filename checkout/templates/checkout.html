@@ -32,16 +32,15 @@
         </div>
     {% endfor %}
 </div>
-</div>
 
-<div class="w-100">
+
+<div>
     <p>Order Total: </p>
     <p> {{ total }} <i class="fa fa-euro" aria-hidden="true"></i></p>
 </div>
 
-<div class="container">
 <hr>
-</div>
+
 
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     <legend>Payment Details</legend>
@@ -63,5 +62,6 @@
         <input class=" btn btn-custom" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
+</div>
 </div>
 {% endblock %}
