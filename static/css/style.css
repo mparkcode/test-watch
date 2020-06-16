@@ -55,6 +55,11 @@ body {
     background-size: cover;
 }
 
+.watch-home-page {
+    background: url(../images/watch-img.png);
+    background-position: center;;
+}
+
 .content-aria {
     margin-top: 50px;
     padding: 25px 25px 25px 25px,
