@@ -171,6 +171,15 @@ caption p {
     background-color: rgb(134, 106, 11);
 }
 
+.total-order {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.total-mod {
+    text-align: right;
+}
+
 /* FOOTER */
 
 .footer {

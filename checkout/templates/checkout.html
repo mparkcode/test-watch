@@ -25,8 +25,8 @@
                 <div class="caption">
                     <h3>{{ item.product.name }}</h3>
                     <p class="product-description">{{ item.product.descriptio }}</p>
-                    <p>{{ item.quantity }}</p>
-                    <p>{{ item.product.price }} <i class="fa fa-euro" aria-hidden="true"></i></p>
+                    <p>Quantity: {{ item.quantity }}</p>
+                    <p>Price: {{ item.product.price }} <i class="fa fa-euro" aria-hidden="true"></i></p>
                 </div>
             </div>
         </div>
@@ -34,9 +34,11 @@
 </div>
 
 
-<div>
+<div class="row">
+<div class="col total-order">
     <p>Order Total: </p>
     <p> {{ total }} <i class="fa fa-euro" aria-hidden="true"></i></p>
+    </div>
 </div>
 
 <hr>
@@ -58,10 +60,13 @@
     </div>
     </div>
     {% csrf_token %}
-    <div class="form-group col-md-12">
+    <div class="form-group col-md-6">
         <input class=" btn btn-custom" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
 </form>
+<div class="row">
+
+
 </div>
 </div>
 {% endblock %}
