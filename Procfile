@@ -1,1 +1,1 @@
-web: gunicorn the:watch_agent.wsgi:application
+web: gunicorn the_watch_agent.wsgi:application
