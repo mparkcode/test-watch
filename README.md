@@ -30,3 +30,39 @@ as smooth as possible. At the same time make it unforgettable for the shopper.
 
 Here come the Mockups that i palnned my project with.
 
+[Click Here](https://www.scribd.com/document/466455588/Mockups-The-Watch-Agent)
+
+## Features
+
+In this section we will be talking about the different technologies that I implemented in this project and the features that could be implemented
+as well: 
+
+### Existing Features
+
+* **Sign up:** This is the first step that a user would be able to do in order to get through to the page and be able to see what kind of
+watches we have.
+
+* **Adding an item to the cart:** This will add the item that you would like to purchase to the cart by providing the quantity.
+
+* **Checkout:** The Checkout button will bring you to the *checkout page* where you fill in your personal & credit card data and place 
+the purchase.
+
+### Left to be implemented:
+
+* **My account page:** Where you see your personal information and also see all orders that were made.
+
+
+## Technologies Used
+
+In this project I have used several technologies in order to achieve my end goal, here are the techs I used:
+
+* **Python3:** This is the language used to build this project from scratch. 
+* **Html:** Html to build the templates.
+* **Django:** Django frameworks to create an interactive ecommerece page.
+* **CSS:** To custom style the page and add some unique touch to my styles.
+* **Bootstrap:** For styling the page and using the bootstrap **Navbar**.
+* **Jquery:** To implement Stripe payments.
+* **Font-awesome:** For adding different icons.
+* **Google-Fonts:** To add new fonts. 
+
+
