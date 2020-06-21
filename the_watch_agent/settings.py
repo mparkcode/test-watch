@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
+import os, sys
 #import env
 import dj_database_url
 
@@ -175,6 +175,8 @@ EMAIL_PORT = 587
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
-def p(*args):
-  print args[0] % (len(args) > 1 and args[1:] or [])
-  sys.stdout.flush()
+print(EMAIL_ADDRESS)
+sys.stdout.flush()
+
+print(EMAIL_PASSWORD)
+sys.stdout.flush()
