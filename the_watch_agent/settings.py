@@ -175,8 +175,8 @@ EMAIL_PORT = 587
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
-print("EMAIL_ADDRESS")
+print(EMAIL_HOST_USER)
 sys.stdout.flush()
 
-#print(EMAIL_PASSWORD)
-#sys.stdout.flush()
+print(EMAIL_HOST_PASSWORD)
+sys.stdout.flush()
