@@ -178,5 +178,5 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 print("test")
 sys.stdout.flush()
 
-print(EMAIL_PASSWORD)
-sys.stdout.flush()
+#print(EMAIL_PASSWORD)
+#sys.stdout.flush()
