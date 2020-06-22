@@ -65,4 +65,26 @@ In this project I have used several technologies in order to achieve my end goal
 * **Font-awesome:** For adding different icons.
 * **Google-Fonts:** To add new fonts. 
 
+## Testing
+
+I have conducted multiple tests in order to check the app on feasbility and also on durability. The app is not to be broken by loading. 
+
+I tested also the login links and the registration and if the user is saved correctly in order to access the page and the watches. 
+
+I also asked Family members and collagues at work to go through the website and test it on functionality and they were impressed by its performance and they added some recipes themselves.
+
+## Deployment
+
+The project is pushed to Github from there it was linked to Heroku for deployment.
+
+Here is the link of the app:
+
+* [The Watch Agent](https://the-watch-agent.herokuapp.com/)
+
+## Credits
+
+* The images were taken from google.
+
+## 
+
 
