@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('GITPOD_HOSTNAME'), 'the-watch-agent.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('GITPOD_HOSTNAME'), 'test-watch.herokuapp.com']
 
 
 # Application definition
